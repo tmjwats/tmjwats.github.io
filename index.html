@@ -1,0 +1,215 @@
+<html>
+    <head>
+        <style>
+            html {
+                background: black;
+                color: white;
+                font-family: arial;
+                font-size: 11pt;
+                line-height: 140%;
+            }
+            .absolute {
+                object-fit: cover;
+                width: 100vw;
+                height: auto;
+                position: fixed;
+                top: 0;
+                left: 0;
+            
+            
+            }
+            .text-box {
+                width: auto;
+                height: 90vh;
+                overflow-y: scroll;
+                overflow-x: auto;
+                margin-left: 21vw;
+                margin-right: 21vw;
+                margin-top: 5vh;
+                opacity: 0;
+                animation: 0.5s fadeIn;
+                animation-delay: 3.5s;
+                animation-fill-mode: forwards;
+                transition: opacity 1.5s;
+                }
+                @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+                }
+        
+            .textcon {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+        
+            }
+            .textcon {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            
+            }
+            @media screen and (max-width: 800px) {
+            .text-box {
+                margin-left: 12vw;
+                margin-right: 12vw;
+            }
+
+            }
+
+        
+        </style>
+    </head>
+
+ <body>
+     <video autoplay loop muted class="absolute">
+          <source src="Desk1.mp4" type="video/mp4" class="video-source">
+    </video>
+    <div class="textcon">
+        <p class="absolute js-text text-box">
+            
+            What will one be able to know?
+            What will be that which one ought to do?
+            For what will one be able to hope?
+            What will the human be?
+            What kind of object will the subject be?
+            Will the subject-object relation persist?
+            What grounds will there be to believe that effect will follow cause?
+            Will reality be divisible into cause and effect?
+            How will concepts make ingress on the nonconceptual?
+            What will be the essence of truth?
+            How will thought relate to being?
+            How will essence appear?
+            How will finitude be conceived?
+            Will thought be able to conceive a limit without thereby surpassing it?
+            What will be the reality of numbers?
+            What will justice be?
+            Will concepts emerge from sensation?
+            What will be the best form of governance?
+            Will there be a persistent and unitary self?
+            Will ought statements be derivable from is statements?
+            Will belief precede practice, or will practice precede belief?
+            Will objects be subject to laws distinct therefrom?
+            Will anything be able to happen otherwise than it does?
+        </p>
+    </div>
+</body>
+
+
+<script>
+
+const first = ["Who, if anyone, will supersede the United States of America as hegemon of the interstate capitalist system?",
+"How will the world's most powerful nations reconcile the requirements of profit and growth, on the one hand, and their citizens' demands for democratic participation, on the other?",
+"When will the finitude of the world's resources and the instability produced by climate change render the obligation for continual economic growth unfeasible?",
+"Will innovations in environmental technologies stymie capitalist growth or bestow industry with improved conditions of profitability?",
+"How will calls for sovereignty and national identity be resolved with increasingly transnational flows of goods and services?",
+"Will the increased demands and militancy of the Chinese working class challenge the working conditions that have thus far bolstered global growth rates?",
+"How will rising dissatisfaction with tax avoidance be reconciled with reliance on financialized corporations whose obligations to shareholders remain to minimize tax expenditure?",
+"How will workers positioned at the bottom of global supply chains respond to their continued maltreatment, and how will their dissatisfaction be registered in core economies?",
+"How will popular demands for full employment be reconciled with the capitalist desideratum of a mobile workforce, vulnerable to the sanction of dismissal?",
+"When will states, governments, households and firms stop adding to their future financial obligations?",
+"How will the short-term demands of shareholder value be reconciled with the long-term requirement to reproduce a reliable and regular supply of labour power?",
+"When will the US dollar relinquish its status as international reserve currency, and what will replace it?",
+"How will the short-term demands of shareholder value be reconciled with the long-term requirement to reproduce a reliable and regular supply of labour power?",
+"When will the US dollar relinquish its status as international reserve currency, and what will replace it?",
+"Will declining growth, sharpening inequality and rising debt beget further economic crises?",
+"Will sharpening inequalities weaken demand and hinder productivity?",
+"Will persistent low growth result in an intensification of the struggle for the world's resources, rendering the rich less willing to grant concessions to the poor?",
+"Will the shrinking costs of reproducing informational products significantly harm the profitability of capitalist enterprise?",
+"How will intellectual property be defended, and what will be its role in promoting or undermining market competition?",
+"When will the rising costs of input, labour and taxation render capitalist accumulation insufficiently profitable to continue?",
+"What form of action will elites undertake if capitalist production is deemed insufficiently profitable?",
+"Will the desires of financial elites to reclaim their debts shift greater investment away from productive enterprise?",
+"Will the value of real estate continue to rise in core economies, and what will be its political consequences?",
+"Will governments continue to see exchange rate manipulation and cheap credit as a means to boost demand and evade crises?",
+"Will rising interstate competition cause wealth disparities between core and periphery to rise or subside?",
+"Will the sustained expansion of the financial sector continue to have little impact on employment?",
+"Will the increased financialization of workers' revenue, evident in borrowing, pensions and money market funds, leave real wages stagnant?",
+"What will become of authoritarian capitalism in East Asia?",
+"Will emerging European nationalisms be a boon or hindrance to the ambitions of transnational finance capital?", 
+"Will the advancing capitalisation of education, health and the environment be restrained so as to ensure the long-term profitability of capitalism?",
+"What hitherto uncommodified areas of social life will be rendered amenable to capitalist accumulation next?",
+
+"What incentive, if any, will induce wealthy nation-states to share the resources necessary for climatic adaptation with poorer subtropical populations?",
+"Will increased energy efficiency beget reduced fossil fuel use, or will a consequent rise in productivity engender further carbon emissions?",
+"Will the demand that production be movable to inexpensive labour ensure that mobile fossil-fuelled infrastructure remains hegemonic?",
+"Will spiralling climatic instability eradicate subsistence and small scale farming in the Global South?",
+"Will the vast swathes of land necessary to transition to renewable energy sources be removed from private use, and by whom will they be requisitioned?",
+"Will poorer nation-states deem themselves unable to rely on the richer states to share the climate change burden, and will they seek global political action?",
+"What, if anything, will curtail the resurgence of coal as a cheap but carbon-intensive energy source?",
+"Will the ostensive inelasticity of electricity consumption beget greater coal use?",
+"Will northern-hemispheric states agree to tax themselves to support the relocation of millions flooded out of heavily populated delta regions?",
+"Will the Global North's citizens' waning commitment to the economic status quo beget a reduction in climate denialism?",
+"Will the expanding horizontal footprint of urban environments be halted to make efficiency savings in transport?",
+"Will wealthier citizens' demands for private urban space be denied to create efficient, compact and clean cities?",
+"Will the appeal of democratically coordinated low-carbon urban lifestyles - characterised by cheap, low energy leisure pursuits and evenly distributed amenities - prove any match for a profit motive oriented to the privatisation of public space?",
+"Will temperature rise provide short-term benefits to European and North American agro-business sufficient to deter climate change policy?",
+"Will reduced farm output in the Middle East, South Asia and the Caribbean further increase the profitability of agro-business in Europe and North America?",
+"Will the profits accrued from rising fossil fuel prices be channelled into renewable energy sources or be transferred to carbon-reliant enterprise?",
+"How will local demands for sovereignty be reconciled with global demands for environmental regulation?",
+"Will the exigencies of climatic transformation prompt a de-escalation of US-China hostilities in order to manage environmental change and global accumulation?",
+"Will mass migration from regions rendered uninhabitable through climate change expedite the intensification of border regimes within richer states, and how will they respond to the diminished mobility of variable capital?",
+"Will increased awareness of planetary finitude engender a widespread denunciation of economic growth?",
+"Will the world's most powerful states resort to interstate violence to enforce reductions in carbon use, and what domestic imperative will provoke them to do so?",
+"Will vast geo-engineering projects be undertaken to reconcile capitalist demands for growth with environmental limitations, and which actor will assume the authority to commence and continue such work?",
+"Will the devastation wrought by global warming sufficiently affect labour in the Global South to threaten continued accumulation in the Global North?",
+"Will persistent inequality between nation-states inhibit international cooperation on climate change?",
+"For how much longer will “business as usual” continue, and what will come next?",
+
+"What will one be able to know?",
+"What will be that which one ought to do?",
+"For what will one be able to hope?",
+"What will the human be?",
+"What kind of object will the subject be?",
+"Will the subject-object relation persist?",
+"What grounds will there be to believe that effect will follow cause?",
+"Will reality be divisible into cause and effect?",
+"How will concepts make ingress on the nonconceptual?",
+"What will be the essence of truth?",
+"How will thought relate to being?",
+"How will essence appear?",
+"How will finitude be conceived?",
+"Will thought be able to conceive a limit without thereby surpassing it?",
+"What will be the reality of numbers?",
+"What will justice be?",
+"Will concepts emerge from sensation?",
+"What will be the best form of governance?",
+"Will there be a persistent and unitary self?",
+"Will ought statements be derivable from is statements?",
+"Will belief precede practice, or will practice precede belief?",
+"Will objects be subject to laws distinct therefrom?",
+"Will anything be able to happen otherwise than it does?",
+]
+
+
+const sample = (arr) => {
+    return arr[Math.floor(Math.random() * arr.length)];
+}
+
+const generateText = (matrix) => {
+    return matrix.map(sample).join("<br>")
+}
+
+const writeToScreen = (text, targetClass) => {
+    const target = document.getElementsByClassName(targetClass)[0]
+    target.innerHTML = text
+}
+
+const matrix = [first, first, first, first, first, first, first, first, first, first, 
+                first, first, first, first, first, first, first, first, first, first, 
+                first, first, first, first, first, first, first, first, first, first,];
+const text = generateText(matrix);
+writeToScreen(text, "js-text");
+
+const backgrounds = ["Desk1.mp4", "Desk2.mp4", "Desk3.mp4"]
+const selectedBackground = sample(backgrounds)
+const backgroundTarget = document.getElementsByClassName("video-source")[0]
+backgroundTarget.setAttribute("src", selectedBackground)
+</script>
+</html>
